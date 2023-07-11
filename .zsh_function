@@ -1,0 +1,9 @@
+function mkcd () {
+	mkdir -p $@ && cd $@;
+}
+
+function tmux_color_test() {
+for i in {0..255} ; do
+	printf "\x1b[38;5;${i}m${i} "
+done
+}  
