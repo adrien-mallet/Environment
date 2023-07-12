@@ -4,7 +4,7 @@ SCRIPT_DIR="${0:A:h}";
 
 parse_directory()
 {
-	if [ "$1" = "$SCRIPT_DIR/.git" ] || [ "$1" = "$SCRIPT_DIR/install.sh" ]
+	if [ "$1" = "$SCRIPT_DIR/install.sh" ]
 	then
 		return;
 	fi
