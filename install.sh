@@ -1,14 +1,9 @@
 #!/usr/bin/env zsh
 
-SCRIPT_DIR="${0:A:h}";
+SCRIPT_DIR="${0:A:h}/configurations";
 
 parse_directory()
 {
-	if [ "$1" = "$SCRIPT_DIR/install.sh" ]
-	then
-		return;
-	fi
-	
 	for file in $1/*(D)
 	do
 		echo $file;
