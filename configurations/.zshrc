@@ -113,3 +113,5 @@ export EDITOR='vim'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.zsh_function
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local;
