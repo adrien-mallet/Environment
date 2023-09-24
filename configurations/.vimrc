@@ -1,13 +1,30 @@
-" Start VimRC
+" MyVimRc
 set nocompatible
 filetype plugin on
 
 " Mapping 
 nmap <leader>l :set list!<CR>
+nmap <leader>;; :nohl<CR>
+imap ;; <Esc>
+map ;; <Esc>
 
 " Setting
 set listchars=tab:▸\ ,eol:¬,lead:·,trail:·,nbsp:&
 set ts=4 sts=4 sw=4 expandtab
+set foldmethod=syntax
+set nofoldenable
+set number
+set ruler
+set wrap
+set title
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set visualbell
+set noerrorbells
+
+syntax enable
 
 " Coloration
 highlight NonText guifg=#4a4a59
