@@ -30,7 +30,6 @@ mason_lspconfig.setup_handlers {
 
 mason_tool_installer.setup({
 	ensure_installed = {
-		"prettier", -- prettier formatter
 		"stylua", -- lua formatter
 		"phpstan",
 		"psalm",
